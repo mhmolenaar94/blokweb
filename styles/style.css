@@ -3,3 +3,167 @@
   box-sizing:border-box;  
 }
 
+/* een paar algemene dingetjes */
+/* hoef je niets aan te veranderen */
+*, *::after, *::before {
+  box-sizing:border-box;
+  font-family:'Helvetica-Neue', sans-serif;
+  color: #222;
+}
+
+
+
+
+
+
+/************************/
+/* LAYOUT VAN DE HEADER */
+/************************/
+
+header {
+  background-color:#ffff;
+  
+  /* jouw code hier */
+display: flex;
+  flex-wrap: wrap;
+   justify-content:space-between;
+  
+}
+
+/*************/
+/* logo/name */
+/*************/
+
+/* hoef je niets aan te veranderen */
+
+header > a {
+  display:block;
+  width:15em; height:3.5em;
+  line-height:1em;
+  padding:.75em 0 .75em 2.75em;
+  
+  font-weight:bold;
+  color:#ffff;
+  background:href("images/farfetch-logo.png") .75em center / auto 2.75em no-repeat;
+  
+}
+
+header > a:hover {
+  padding:.75em 2.75em .75em 0;
+  text-align:right;
+  background-position:calc(100% - .75em) center;
+}
+
+header > a:focus {
+  text-decoration:underline;
+}
+
+/*************/
+/* navigatie */
+/*************/
+
+header nav {
+  background-color:rgba(255, 255, 255, 0.1);
+  
+  /* jouw code hier */
+flex-grow:1;
+  
+}
+
+header nav ul {    
+  margin:0; padding:0;
+  list-style:none;
+  /* jouw code hier */
+display:flex;
+  
+}
+
+header nav li {
+  /* jouw code hier */
+  flex-grow:1;
+min-width:1em;
+  
+}
+
+header nav a {
+  color:#222;
+  background-color:#ffff; 
+  text-decoration:none;
+  outline:none;
+   display: block;
+  line-height: 3.5em;
+    text-align: center
+  
+  /* jouw code hier */
+
+  
+}
+
+header nav a.active {
+  font-weight:bold;
+  /* de cursor geen handje wordt als je over de active link hovert */
+  cursor:default;
+}
+
+header nav a:hover:not(.active) {
+  /* als je over een link in het menu (maar niet de active link) hovert */
+  color:#222;
+  font-weight:bold;
+  background-color:white;
+}
+
+img{
+height: 5em;
+  width: auto;
+ 
+}
+
+
+/*************/
+/* lay-out main */
+/*************/
+
+main {
+  background-color:#ffff;
+ }
+
+
+h1 {
+  font-family:'Helvetica-Neue', sans-serif;
+  font-size:48px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-family:'Helvetica-Neue', sans-serif;
+  font-size:24px;
+  color: #222}
+
+h3 {
+  font-family:'Nimbus Roman D', serif;
+  font-size:20px;
+  font-weight: 100;
+  color: #222;
+  text-align: center;}
+
+h4 {
+  font-family:'Helvetica-Neue', sans-serif;
+  font-size:20px;
+  color: #222}
+
+
+p {
+  font-family:'Helvetica-Neue', sans-serif;
+  font-size:16px;
+  color: #222;}
+
+.firstimage {
+width:1100x;
+height:600px;
+display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
