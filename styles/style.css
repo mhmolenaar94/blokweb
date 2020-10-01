@@ -1,122 +1,178 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+:root {
+  --background: white;
 }
 
-/* een paar algemene dingetjes */
-/* hoef je niets aan te veranderen */
-*, *::after, *::before {
-  box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
   font-family:'Helvetica-Neue', sans-serif;
   color: #222;
+  margin:0;
 }
 
-
-
-
-
-
-/************************/
-/* LAYOUT VAN DE HEADER */
-/************************/
-
+.content {
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+/* navigation styles start here */
 header {
-  background-color:#ffff;
-  
-  /* jouw code hier */
-display: flex;
-  flex-wrap: wrap;
-   justify-content:space-between;
-  
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  margin:0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+
 }
 
-/*************/
-/* logo/name */
-/*************/
+/* Nav-toggle start*/
 
-/* hoef je niets aan te veranderen */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(black, .75);
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 4px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
 
-header > a {
-  display:block;
-  width:15em; height:3.5em;
-  line-height:1em;
-  padding:.75em 0 .75em 2.75em;
-  
+/* Nav styling*/
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  margin:0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-top: 0;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 200;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover {
   font-weight:bold;
-  color:#ffff;
-  background:href("images/farfetch-logo.png") .75em center / auto 2.75em no-repeat;
-  
 }
 
-header > a:hover {
-  padding:.75em 2.75em .75em 0;
-  text-align:right;
-  background-position:calc(100% - .75em) center;
+img {
+  display:flex;
+   align-items: center;
+  max-width:10em;
+  margin: 1em;
 }
 
-header > a:focus {
-  text-decoration:underline;
+/* Nav-toggle checked*/
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+.logo {
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
 }
 
-/*************/
-/* navigatie */
-/*************/
+/* Breakpoint aanmaken*/
 
-header nav {
-  background-color:rgba(255, 255, 255, 0.1);
-  
-  /* jouw code hier */
-flex-grow:1;
-  
+@media screen and (min-width: 950px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .menu {
+    grid-column: 1 / 3;
+    position: relative;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+    min-width: 300px;
+  }
+  nav {
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  .logo {
+    grid-column: 3 / 4;
+  }
 }
 
-header nav ul {    
-  margin:0; padding:0;
-  list-style:none;
-  /* jouw code hier */
-display:flex;
-  
-}
-
-header nav li {
-  /* jouw code hier */
-  flex-grow:1;
-min-width:1em;
-  
-}
-
-header nav a {
-  color:#222;
-  background-color:#ffff; 
-  text-decoration:none;
-  outline:none;
-   display: block;
-  line-height: 3.5em;
-    text-align: center
-  
-  /* jouw code hier */
-
-  
-}
-
-header nav a.active {
-  font-weight:bold;
-  /* de cursor geen handje wordt als je over de active link hovert */
-  cursor:default;
-}
-
-header nav a:hover:not(.active) {
-  /* als je over een link in het menu (maar niet de active link) hovert */
-  color:#222;
-  font-weight:bold;
-  background-color:white;
-}
-
-img{
-height: 5em;
-  width: auto;
- 
-}
 
 
 /*************/
@@ -124,46 +180,52 @@ height: 5em;
 /*************/
 
 main {
-  background-color:#ffff;
+  margin:1em;
+  margin-top:-0.1em;
+
  }
 
 
 h1 {
-  font-family:'Helvetica-Neue', sans-serif;
-  font-size:48px;
-  color: #222;
+  font-size:32px;
   text-transform: uppercase;
-  text-align: center;
+  
 }
 
 h2 {
-  font-family:'Helvetica-Neue', sans-serif;
   font-size:24px;
-  color: #222}
+}
 
 h3 {
-  font-family:'Nimbus Roman D', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size:20px;
   font-weight: 100;
-  color: #222;
-  text-align: center;}
+  text-align: justify;
+  text-justify: inter-word; 
+}
 
 h4 {
-  font-family:'Helvetica-Neue', sans-serif;
   font-size:20px;
-  color: #222}
+}
+
+h5 {
+  font-size:11px;
+}
 
 
 p {
-  font-family:'Helvetica-Neue', sans-serif;
   font-size:16px;
-  color: #222;}
+  font-weight: 100;
+}
 
-.firstimage {
-width:1100x;
-height:600px;
-display: block;
-    margin-left: auto;
-    margin-right: auto
 
+h5:nth-child(1){
+background: rgb(231, 231, 231);
+  
+}
+
+.beginfoto {
+	display: block;
+	margin-left: 0.1em;
+  max-width: 95%;
 }

@@ -1,76 +1,121 @@
 <!doctype html>
 <html lang="nl">
-	
+    
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Maria Molenaar">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Farfetch</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Maria Molenaar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Farfetch</title>
+    
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<header>
+		<div class="menu">
+		   <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+		   <nav>
+			   <ul>
+				   <li> <a href="#">Dames</a></li>
+				   <li> <a href="#">Heren</a></li>
+				   <li> <a href="#">Kinderen</a></li>
+			   </ul>
+		   </nav>
+		   <label for="nav-toggle" class="nav-toggle-label">
+			  <span><span/>
+		   </label>
+	   </div>
+	   <div class="logo">
+		   <img src="https://i.postimg.cc/nzZKZkWP/Farfetch-Black-Logo.png" alt="logo"/>
+	   </div>
+   </header>
 
-			<form action="" class="language-picker__form">
-			  <label for="language-picker-select"></label>
-		  
-			  <select name="language-picker-select" id="language-picker-select">
-				<option lang="de" value="deutsch">Deutsch</option>
-				<option lang="en" value="english" selected>English</option>
-				<option lang="fr" value="francais">Français</option>
-				<option lang="it" value="italiano">Italiano</option>
-			  </select>
-			</form>
-		  </div>
-    
-		<!-- navigatie -->
-		<nav>
-			<ul>
-				<li><a class="active">Dames</a></li>
-				<li><a href="#">Heren</a></li>
-				<li><a href="#">Kinderen</a></li>
-			</ul>
-		</nav>
+    <main>
+		<h5>Jouw sleutel tot een wereld van mode | Alleen op FARFETCH | Ontdek meer</h5>
 
-		<!-- logo/name 	-->
-		<img class="logo" src="images/farfetch-logo.png" alt="logo">
+        <section>
+        <img class="beginfoto" src="images/homescreen1.webp" alt="first image">
+        <h1>Jouw sleutel tot een wereld van iconische mode </h1>
+        <h3>Ontdek eindeloze mogelijkheden in de meest iconische vormen, van Prada, Fendi, Saint Laurant en Gucci.</h3>
+	</section>
+	
+	<section>
+    	<article>
+      	  <img  src="images/vrouwtas.webp" alt="woman with bag">
+        	<p>Accessoires voor de herfts</p>
+        	<p>Maak je look af met Miu Miu, Abra, Prada en meer.</p>
+   		 </article>
 
-		<img src="images/person.png" alt="account">
-		<img src="images/star.png" alt="favorite">
-		<img src="images/bag.png" alt="shoppingbag">
-		
-	</header>
-
-	<main>
-		<section>
-		<img class="firstimage" src="images/homescreen1.webp" alt="first image">
-		<h1>Jouw sleutel tot een wereld van iconische mode </h1>
-		<h3>Ontdek eindeloze mogelijkheden in de meest iconische vormen, van Prada, Fendi, Saint Laurant en Gucci.</h3>
+  	  <article>
+			<img src="images/homescreen2.jpg" alt="schoenen">
+			<p>Balmain</p>
+			<button type="button">shop nu</button>
+		</article>
 	</section>
 
-	<article>
-		<img  src="images/vrouwtas.webp" alt="woman with bag">
-		<p>Accessoires voor de herfts</p>
-		<p>Maak je look af met Miu Miu, Abra, Prada en meer.</p>
-	</article>
-
-	<article>
-		<img src="images/vrouwtas.webp" alt="woman with bag">
-	</article>
-
-	<Section>
-		<h2>
-			New in: dagelijks samengesteld van 's werelds beste merken en boetieks
-			<button type="button">shop nu</button>
-		</h2>
-	</Section>
-
-	</main>
-
-	<script src="scripts/script.js"></script>
-</body>
+    <Section>
+        <h2>New in: dagelijks samengesteld van 's werelds beste merken en boetieks</h2>
 	
+	<article>
+		<img src="images/Carrousel1.1.jpg" alt="artikel 1">
+		<p>ambush</p>
+		<p>Leren blazer</p>
+		<p>1.100 €</p>
+	</article>
+
+	<article>
+		<img src="images/carrousel2.1.webp" alt="artikel 2">
+		<p>Jil Sander</p>
+		<p>Leren crossbodytas</p>
+		<p>400 €</p>
+	</article>
+
+	<article>
+		<img src="images/Carrousel3.1.webp" alt="artikel 3">
+		<p>ambush</p>
+		<p>Broek met wijde pijpen</p>
+		<p>690 €</p>
+	</article>
+
+	<article>
+		<img src="images/Carrousel4.1.webp" alt="artikel 4">
+		<p>Marni</p>
+		<p>Chelsea leren laarzen</p>
+		<p>690 €</p>
+	</article>
+	
+	<button type="button">shop nu</button>
+
+</Section>
+
+<section>
+	<h2>De highlights van de week</h2>
+
+	<article>
+		<img  src="images/highlight1.webp" alt="vrouw in roze trenchcoat">
+		<p>De nieuwste trenchcoats</p>
+		<p>Tijdloze klassiekers, in een modern jasje</p>
+	</article>
+
+	<article>
+		<img  src="images/highlight2.webp" alt="vrouw met tijgerstandbeeld">
+		<p>Burberry</p>
+		<p>Een kijkje in hun Britse archief</p>
+	</article>
+
+	<article>
+		<img  src="images/highlight3.webp" alt="vrouw in edgy kledding">
+		<p>Palm angels</p>
+		<p>Francesco Ragazzi's visie op Americana stijl</p>
+	</article>
+
+</section>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+    
 </html>
+
