@@ -181,7 +181,8 @@ img {
 
 main {
   margin:1em;
-  margin-top:-0.1em;
+  margin:0;
+  padding-top: 60px;
 
  }
 
@@ -228,4 +229,134 @@ background: rgb(231, 231, 231);
 	display: block;
 	margin-left: 0.1em;
   max-width: 95%;
+}
+
+/*************/
+/* lay-out Footer */
+/*************/
+
+footer{
+	position: sticky;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: rgb(34, 34, 34);;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+p {
+  Font-family: Helvetica Neue;
+  font-weight: 200;
+  color: white;
+	line-height: 1.8;
+	text-decoration: none;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right1,
+  .footer-distributed .footer-right2{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+h6{
+	color:  white;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color:  inherit;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	text-align: left;
+	line-height: 42px;
+	margin: 10px;
+}
+
+/* Footer Right1 */
+
+.footer-distributed .footer-right1{
+	width: 15%;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+	cursor: pointer;
+}
+
+/* Footer Right 2*/
+
+.footer-distributed .footer-right2{
+	width: 15%;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.lastsetence{
+  font-size: 14px;
+  margin-top: 1.2em; 
+}
+
+/* Here is the code for Responsive Footer */
+
+@media (max-width: 950px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right1,
+  .footer-distributed .footer-right2{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
