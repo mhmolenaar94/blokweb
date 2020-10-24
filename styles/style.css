@@ -199,7 +199,6 @@ h1 {
   font-size:2.4rem;
   text-transform: uppercase;
   margin-bottom:1rem;
-  max-width: 40%;
 }
 
 h2 {
@@ -208,7 +207,6 @@ h2 {
   font-weight: 200;
   text-align: center;
   margin-bottom:4rem;
-  max-width: 70%;
 }
 
 h4{
@@ -243,7 +241,8 @@ img.beginfoto {
 
 div.firsttext{
   text-align: center;
-  margin-bottom:8rem;
+  margin: 0 auto 8rem auto;
+  width: 70%;
 }
 
 /* tweede section*/ 
@@ -293,20 +292,14 @@ button {
 
 /* derde section*/
  .producten {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
- 
-  justify-content: center;
-  margin-bottom: 14rem;
+  margin-bottom: 8rem;
 }
 
 .kleding {
-  text-align: center;
+  display: block;
    width: 70%; 
-   margin: -5rem;
-   margin-top: 2rem;
+   margin: auto;
 } 
 
 .containerkleding{
@@ -329,14 +322,6 @@ button {
   width:1.5rem;
   cursor: pointer;
 } 
-
-.tekst {
-position: absolute;
-bottom: -10rem;
-left: 50%;
-transform: translateX(-50%);
-
-}
 
 .cursief {
   font-weight: 800;
@@ -372,30 +357,19 @@ transform: translateX(-50%);
   }
 
   .producten {
-    display: flex;
-  /* scroll-snap-type: x mandatory; */
-  overflow-x: scroll;
-  /* scroll-behavior: smooth; */
+    justify-content: flex-start;
   }
 
   .containerkleding{
-    width: 50%;
     flex-shrink: 0.1;
     scroll-snap-align: start;
   }
 
-  .kleding {
-    display: block;
-    width: 80%;
-   } 
-   
+  h1, h2, h3, h4, h5 {
+    font-size: 80%; 
+    }
   }
   
-
-
-
-
-
 /*************/
 /* lay-out Footer */
 /*************/
