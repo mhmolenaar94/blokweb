@@ -35,42 +35,49 @@
     <main>
 			<h5>Jouw sleutel tot een wereld van mode | Alleen op FARFETCH</h5>
 
-		<section class="detailproduct">
-			<article class="containerproduct">
-					 <img  class="product" src="images/blazer2.jpg" alt="wollen blazer">
-			 </article>
+	<section class="contentContainer">
 
-			 <article class="containerproduct">
-				<img  class="product" src="images/Blazer3.jpg" alt="Bidon in roze hoes">
-			
-		</article>
+		<section class="articlesContainer">
 
-		
+			<article class="product">
+				 <img class="imageProduct" src="images/blazer2.jpg" alt="wollen blazer">
+			</article>
 
-	<article class="containerproduct">
-			<p>Richard Malone</p>
-			<p>Wollen blazer</p>
-			<p>1.100 €</p>
-			<div class="dropdown">
-				<button class="dropbtn">Selecteer je maat</button>
-				<div class="dropdown-content">
-				<a href="#">XS</a>
-				  <a href="#">S</a>
-				  <a href="#">M</a>
-				  <a href="#">L</a>
-				  <a href="#">XL</a>
-				  <a href="#" class="dropdown-zin">Maat niet beschikbaar? Ontvang een notificatie wanneer deze weer beschikbaar is</a>
+			<article class="product"> 
+				<img class="imageProduct" src="images/Blazer3.jpg" alt="wollen blazer">
+			</article>
+
+			<article class="product"> 
+				<div class="productText">
+				<div class=" productTextCell">
+
+					<p class="cursief">Richard Malone</p>
+					<p>Wollen blazer</p>
+					<p id="money">1.100 €</p>
+
+					<div class="dropdown">
+						<button class="dropbtn">Selecteer je maat</button>
+						<div class="dropdown-content">
+						<a href="#">XS</a>
+						  <a href="#">S</a>
+						  <a href="#">M</a>
+						  <a href="#">L</a>
+						  <a href="#">XL</a>
+						  <a href="#" class="dropdown-zin">Maat niet beschikbaar? Ontvang een notificatie wanneer deze weer beschikbaar is</a>
+						</div>
+					  </div>
+				  <button class="shopNowBtn" id="cardBtn" type="button">Winkelmand</button>
 				</div>
-			  </div>
-			  <button id="shopnubutton"type="button">Winkelmand</button>
-	</article>
-	</section>
+			</div>
+			</article>
+		</section>
 
-		<section class="specificaties">
+
+		<section class="specificationContainer">
 			<div class="btn-box">
-				<button id="btn1" onclick="openHTML()">Gegevens</button>
-				<button id="btn2" onclick="openCSS()">Maat & pasvorm</button>
-				<button id="btn3" onclick="openJS()">Verzending & retournering</button>
+				<button id="btn1" onclick="openTab1()">Gegevens</button>
+				<button id="btn2" onclick="openTab2()">Maat & pasvorm</button>
+				<button id="btn3" onclick="openTab3()">Verzending & retournering</button>
 			</div>
 
 			<div id="content1" class="spec-content">
@@ -85,7 +92,7 @@
 				</div>
 			</div>
 
-			<div id="content2" class="spec-content">
+			<div id="content2" class="spec-content displayNone">
 				<div class="content-left">
 					<img  src="images/blazer.webp" alt="blazer op persoon">
 				</div>
@@ -96,7 +103,7 @@
 				</div>
 			</div>	
 
-			<div id="content3" class="spec-content">
+			<div id="content3" class="spec-content displayNone">
 				<div class="content-left">
 					<p>We houden van transparantie. Importkosten zijn inbegrepen in de artikelprijs bij verzending naar alle EU-landen plus Verenigd Koninkrijk, Verenigde Staten, Canada, Vasteland China, Australië, Nieuw-Zeeland, Israël, Puerto Rico, Zwitserland, Singapore, Republiek Korea, Koeweit, Mexico, Qatar, India, Noorwegen, Saoedi-Arabië, Bahrein, Hong Kong SAR, Regio Taiwan, Thailand, Verenigde Arabische Emiraten, Japan, Brazilië, Isle of Man, San Marino, Spanje – Canarische Eilanden, Colombia, Chili, Argentinië, Egypte en Libanon. Alle invoerrechten zijn inbegrepen in uw bestelling - de prijs die u ziet is de prijs die u betaalt.</p>
 				</div>
@@ -108,18 +115,8 @@
 						</p>
 				</div>
 			</div>
-
-			
-
 		</section>
-		
-
-	
-
-		
-
-
-		</section>
+	</section>
 	
 	</main>
 	

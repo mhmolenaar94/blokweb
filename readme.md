@@ -56,16 +56,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** -blauwe piste met de uitloop naar rood-
+**Je startniveau:** - Ik zit echt op de blauwe piste, ik merk wanneer iemand het mij uitlegd dat ik het begrijp maar wanneer ik zelf ergens moet starten ben ik  al snel de weg kwijt. -
 
-**Je focus:** -responsive-
+**Je focus:** - Ik ga mij focussen op het responsive maken van de website -
 
-**Je opdracht:** -lhttps://www.farfetch.com/nl/shopping/women/items.aspx-
+**Je opdracht:** - https://www.farfetch.com/nl/shopping/women/items.aspx -
 
 **Screenschots**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+screenshot/schermafbeelding 2020-10-26 om 10.09.11.png
+screenshot/schermafbeelding 2020-10-26 om 10.09.26.png
+screenshot/schermafbeelding 2020-10-26 om 10.09.32.png
+screenshot/schermafbeelding 2020-10-26 om 10.09.40.png
+
 
 **Breakdown-schets(en):**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+
+
+
+

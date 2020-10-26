@@ -9,7 +9,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
   font-family:'Helvetica-Neue', sans-serif;
-  /* color: #222; */
   margin:0;
 }
 
@@ -20,6 +19,7 @@
   display: grid;
   place-items: center;
 }
+
 /* navigation styles start here */
 header {
   background: var(--background);
@@ -131,7 +131,7 @@ header img{
   margin-right: auto;
 }
 
-/* Breakpoint aanmaken*/
+/* Breakpoint for navgation*/
 
 @media screen and (min-width: 950px) {
   .nav-toggle-label {
@@ -188,7 +188,7 @@ main {
   
  }
 
- .contentcontainer{
+ .contentContainer{
   width: 90%;
   display: block;
   margin-left: auto;
@@ -230,8 +230,9 @@ h5{
   font-weight: 100;
   margin-bottom:2rem;
 }
-/* eerste section*/
-img.beginfoto {
+
+/* First section*/
+img.mainPhoto {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -239,29 +240,29 @@ img.beginfoto {
   margin-bottom:1rem;
 }
 
-div.firsttext{
+div.firstText{
   text-align: center;
   margin: 0 auto 8rem auto;
   width: 70%;
 }
 
-/* tweede section*/ 
-.artikelen {
+/* Second section*/ 
+.articlesContainer {
   display: flex;
   justify-content: center;
   margin-bottom: 6rem;
 }
 
-.fotoartikelen {
+.articlesPhoto {
   padding: 1.2rem;
   width:100%;
 }
 
-#uppercasep{
+#uppercaseP{
   text-transform: uppercase;
 }
 
-article.textimage {
+article.textImage {
   position: relative;
   text-align: center;
 }
@@ -290,32 +291,24 @@ button {
   cursor: pointer;
 }
 
-/* derde section*/
- .producten {
+/* Thirth section*/
+ .productesContainer {
   display: flex;
   margin-bottom: 8rem;
 }
 
-.kleding {
+.clothingContainer{
+  position: relative;
+  text-align: center;
+}
+
+.clothingPhoto{
   display: block;
    width: 70%; 
    margin: auto;
 } 
 
-.containerkleding{
-  position: relative;
-  text-align: center;
-}
-
-.boxster {
-  position: absolute;
-  top: 4px;
-  right: 8px;
-  width:1.5rem;
-  cursor: pointer;
-} 
-
-.boxsterclosed {
+.boxStar {
   position: absolute;
   top: 4px;
   right: 8px;
@@ -328,9 +321,9 @@ button {
 }
 
 
-/* Shop nu button */
+/* Shop now button */
 
-#shopnubutton{
+.shopNowBtn{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -350,23 +343,30 @@ button {
 /* Here is the code for Responsive main */
 
 @media (max-width: 950px){
-  main .artikelen {
+.articlesContainer {
   display: flex;
- flex-direction: column;
-    Text-align: center;
+  flex-direction: column;
+  Text-align: center;
   }
 
-  .producten {
-    justify-content: flex-start;
+  .productesContainer{
+    display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+    
   }
 
-  .containerkleding{
-    flex-shrink: 0.1;
+  .clothingContainer{
+    width: 100%;
+    flex-shrink: 0;
     scroll-snap-align: start;
+    max-width: 55%;
   }
 
-  h1, h2, h3, h4, h5 {
-    font-size: 80%; 
+
+  h1, h2, h3, h4 {
+    font-size: 130%; 
     }
   }
   
@@ -412,7 +412,6 @@ footer li  {
   list-style: none;
 }
   
-/* Footer eind p*/
 footer p {
   position: absolute;
   bottom: 0;
@@ -451,21 +450,59 @@ footer p {
 /*************/
 /* TWEEDE PAGINA */
 /*************/
-.detailproduct {
-  display: flex;
-  margin-bottom: 8rem;
-}
-.containerproduct{
-  position: relative;
-  text-align: center;
-  max-width: 50%; 
-}
+
+/* First section*/
 .product{
-   width: 50%; 
+   width: 33%; 
+   margin: 0.5rem;
 } 
 
+.imageProduct {
+  width: 100%;
+}
+
+/* Positioning text */
+
+.productText {
+  width: 100%;
+  display: table;
+  margin-top: 8rem;
+}
+
+
+.productTextCell {
+  display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#money {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#cardBtn {
+  background-color: #222;
+  color: white;
+  margin-top: 0.5rem;
+  width: 65%;
+}
+
+#cardBtn:hover {
+  background-color: #383838;
+}
+
+
 /* Style The Dropdown Button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+ 
+}
+
 .dropbtn {
+  width: 80%;
   background-color: transparent;
   color: #222;
   border: .05rem solid #222;
@@ -474,22 +511,20 @@ footer p {
   cursor: pointer;
   font-weight: 700;
   font-size: 1rem;
+  margin-top: 3rem;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+
 
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
   border: .05rem solid #222;
   border-radius: .4rem;
 }
 
 .dropdown-content a {
+  
   color: black;
   background-color: white;
   padding: 12px 16px;
@@ -501,6 +536,7 @@ footer p {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  width: 80%;
 }
 
 .dropdown-zin {
@@ -508,17 +544,13 @@ footer p {
   text-align: left;
 }
 
-
-
-
 /* Tab box*/
 
-.specificaties {
-  width: 80%;
+.specificationContainer {
+  width: 100%;
   height: 450px;
   position: relative;
   margin: 100px auto;
-  overflow: hidden;
 }
 
 .btn-box {
@@ -539,30 +571,35 @@ footer p {
 }
 
 .spec-content {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 5% auto;
+  margin: 1rem;
   position: absolute;
-  transform: translateX(300%);
-}
-
-.content-left {
-  flex-basis: 50%;
-}
-
-.content-right {
-  flex-basis: 50%;
 }
 
 .content-left img {
-  max-width: 200px;
+  max-width: 50%;
 }
 
-#content1 {
-  transform: translateX(0px)
+
+.displayNone {
+  display: none;
 }
 
-#btn1 {
-  color: #222;
+/* Here is the code the main page 2 */
+
+@media (max-width: 950px){
+  .product{
+    width: 100%; 
+ } 
+
+ .btn-box {
+  display: flex;
+  flex-direction: column;
+  Text-align: center;
+  }
 }
+
+
+
+
+
