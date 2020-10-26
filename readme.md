@@ -64,8 +64,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenschots**
 
-(screenshots/screenshotHomepage.png)
-(screenshots/screenshotArticles.png)
+![-screenshot-](screenshots/screenshotHomepage.png)
+![-screenshot-](screenshots/screenshotArticles.png)
 (screenshots/screenshotCarousel.png)
 (screenshots/screenshotFooter.png)
 
