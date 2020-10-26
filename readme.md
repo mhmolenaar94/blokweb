@@ -24,7 +24,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Agenda voor meeting
+
+-Bespreking met Vasilis van Gemert, groep 2-
+
+### Stand van zaken
+-Eindelijk  de Header/navigatie plus de footer werkende. Wel had ik de Footer heel omslachtig gemaakt en heb ik dit met Romy Wiedijk besproken. Waarna ik de footer toch weer opnieuw ben gaan opzetten om het allemaal wat netter te maken.-
+
+![-screenshot-](screenshots/beoordeling3.1.png)
+![-screenshot-](screenshots/beoordeling3.2.png)
+![-screenshot-](screenshots/beoordeling3.3.png)
+![-screenshot-](screenshots/beoordeling3.4.png)
+![-screenshot-](screenshots/beoordeling3.5.png)
+
+
+
+### Verslag van meeting
+-Voor mijn eigen gevoel was ik wel redelijk goed op weg, aangezien mijn kennis niet heel groot is. Was ik al trots dat dit er stond. Nu was het de opdracht om alles in de Main nog goed te positioneren en de juiste styling te geven. Tevens ook voor de tweede pagina.-
 
 
 
@@ -38,19 +54,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Wat ging er niet mis. Ik merk dat ik het allemaal heel lastig vind. Waar moet ik beginnen? Ik ben maar begonnen met de header oftewel de navigatie. Wat allemaal niet  zo gemakkelijk ging. Ik heb het dus ook nog niet voor elkaar.-
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![-screenshot-](screenshots/beoordeling1.1.png)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-Bespreking met Romy Wiedijk en Jo-ann Lieuw-A-Peuw, groep 2-
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-Het blijkt wel dat ik nog veel moet doen, had alleen een incomplete navigatie te laten zien. Het advies aan mij was dan ook, staar je er niet blind op en ga anders eerst even door met iets anders en pak later die navigatie dan weer op.-
 
 
 
@@ -66,13 +82,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ![-screenshot-](screenshots/screenshotHomepage.png)
 ![-screenshot-](screenshots/screenshotArticles.png)
-(screenshots/screenshotCarousel.png)
-(screenshots/screenshotFooter.png)
+![-screenshot-](screenshots/screenshotCarousel.png)
+![-screenshot-](screenshots/screenshotFooter.png)
 
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![-breakdown hele website-](screenshots/1x/breakdown1.png)
+![-breakdown een sectie-](screenshots/Breakdown3@3x.png)
 
 
 
