@@ -64,10 +64,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenschots**
 
-screenshot/schermafbeelding 2020-10-26 om 10.09.11.png
-screenshot/schermafbeelding 2020-10-26 om 10.09.26.png
-screenshot/schermafbeelding 2020-10-26 om 10.09.32.png
-screenshot/schermafbeelding 2020-10-26 om 10.09.40.png
+screenshots/screenshotHomepage.png
+screenshots/screenshotArticles.png
+screenshots/screenshotCarousel.png
+screenshots/screenshotFooter.png
 
 
 **Breakdown-schets(en):**
