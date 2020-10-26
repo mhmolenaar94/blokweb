@@ -1,8 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
-
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
+**Auteur:** -Maria Molenaar-
 
 
 ## Bronnenlijst
@@ -18,8 +15,9 @@ voor de carousel met prodcuten op pagina 1.-
 voor het toevoegen van de favicon.-
 6. -https://www.youtube.com/watch?v=8QKOaTYvYUA 
 voor de header/navigatie.-
-7. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+7. -https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
 voor flexbox.-
+8. https://www.golangprograms.com/javascript-example-to-change-image-on-click.html voor de toggle image.-
 
 8. -https://zellwk.com/blog/how-to-write-mobile-first-css/ 
 https://www.handleidinghtml.nl/css/css-oud/position.htm
@@ -31,10 +29,17 @@ om in de stof (html/css/js) te komen.-
 
 -Ik heb veel tijd en energie in dit vak gestoken. Ik merkte dat ik echt weer vanaf nul moest beginnen, omdat het toch al wel weer een aantal jaren geleden was dat ik had geprogrammeert. Ik vond het positioneren een van de lastigste stukken. Vooral de afbeeldingen waren soms koppig. Wat ik ook heb geleerd is eerder hulp vragen, inplaats van zelf alles willen oplossen. Dit had mij in het begin veel tijd kunnen besparen. De responsive elementen plus de beweegbare elementen (carousel) vond ik ook lastig.-
 
-**Screenshot(s):**
+**Screenshot(s) Eerste pagina:**
 
--screenshot(s) van je eindresultaat-
+![-screenshot-](screenshots/page1.1.png)
+![-screenshot-](screenshots/page1.2.png)
+![-screenshot-](screenshots/page1.3.png)
+![-screenshot-](screenshots/page1.4.png)
 
+**Screenshot(s) Tweede pagina:**
+
+![-screenshot-](screenshots/page2.1.png)
+![-screenshot-](screenshots/page2.2.png)
 
 
 ## Voortgang 3 (week 6)

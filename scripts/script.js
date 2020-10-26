@@ -23,6 +23,11 @@ function openTab3() {
   content2.style.display = "none"
 }
 
-function changeImage() {
-  document.getElementById('changeIMG').src = "imgages/blazer2.jpg";
+function toggleImage() {
+  var img1 = "images/1x/starClosed.png";
+  var img2 = "images/1x/Staropen.png";
+  
+  var imgElement = document.getElementById('toggleImage');
+
+  imgElement.src = (imgElement.src === img1)? img2 : img1;
 }

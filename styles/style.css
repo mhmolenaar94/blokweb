@@ -40,13 +40,13 @@ header {
   left: -9999px !important;
 }
 .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(black, .75);
+  outline: 0.188rem solid rgba(black, .75);
 }
 .nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 1em;
+  margin-left: 1rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -56,9 +56,9 @@ header {
 .nav-toggle-label span::after {
   display: block;
   background: black;
-  height: 2px;
+  height: 0.125rem;
   width: 2em;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   position: relative;
 }
 .nav-toggle-label span::before,
@@ -67,10 +67,10 @@ header {
   position: absolute;
 }
 .nav-toggle-label span::before {
-  bottom: 7px;
+  bottom: 0.438rem;
 }
 .nav-toggle-label span::after {
-  top: 7px;
+  top: 0.438rem;
 }
 
 /* Nav styling*/
@@ -93,14 +93,14 @@ nav ul {
   list-style: none;
 }
 nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
   margin-top: 0;
 }
 nav a {
   color: black;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 200;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -112,8 +112,8 @@ nav a:hover {
 header img{
   display:flex;
   align-items: center;
-  max-width:10em;
-  margin: 1em;
+  max-width:10rem;
+  margin: 1rem;
 } 
 
 /* Nav-toggle checked*/
@@ -147,7 +147,7 @@ header img{
     display: flex;
     justify-content: flex-end;
     align-items: center;  
-    min-width: 300px;
+    min-width: 18.75rem;
   }
   nav {
     text-align: left;
@@ -163,7 +163,7 @@ header img{
     display: flex;
   }
   nav li {
-    margin-left: 3em;
+    margin-left: 3rem;
     margin-bottom: 0;
   }
   nav a {
@@ -175,16 +175,14 @@ header img{
   }
 }
 
-
-
 /*************/
 /* lay-out main */
 /*************/
 
 main {
-  margin:1em;
+  margin:1rem;
   margin:0;
-  padding-top: 60px;
+  padding-top: 3.75rem;
   
  }
 
@@ -310,8 +308,8 @@ button {
 
 .boxStar {
   position: absolute;
-  top: 4px;
-  right: 8px;
+  top:0.25rem;
+  right: 0.5rem;
   width:1.5rem;
   cursor: pointer;
 } 
@@ -319,7 +317,6 @@ button {
 .cursief {
   font-weight: 800;
 }
-
 
 /* Shop now button */
 
@@ -354,7 +351,6 @@ button {
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   scroll-behavior: smooth;
-    
   }
 
   .clothingContainer{
@@ -363,12 +359,7 @@ button {
     scroll-snap-align: start;
     max-width: 55%;
   }
-
-
-  h1, h2, h3, h4 {
-    font-size: 130%; 
-    }
-  }
+}
   
 /*************/
 /* lay-out Footer */
@@ -379,7 +370,7 @@ footer {
   justify-content: space-between;
   position: relative;
   background-color: rgb(34, 34, 34);
-padding: 30px;
+padding: 1.875rem;
 padding-bottom: 6rem;
 
 }
@@ -400,7 +391,7 @@ footer a {
   font-weight: 200;
    text-decoration: none;
   color: white;
-  font-size: 1em;
+  font-size: 1rem;
   	line-height: 1.8;
 }
 
@@ -424,7 +415,6 @@ footer p {
   font-size: 0.8rem;
 }
 
-
 /* Here is the code for Responsive Footer */
 
 @media (max-width: 950px){
@@ -443,8 +433,7 @@ footer p {
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
   text-align: left;
-}
-  
+  } 
 }
 
 /*************/
@@ -469,7 +458,6 @@ footer p {
   margin-top: 8rem;
 }
 
-
 .productTextCell {
   display: table-cell;
     vertical-align: middle;
@@ -492,13 +480,11 @@ footer p {
   background-color: #383838;
 }
 
-
 /* Style The Dropdown Button */
 .dropdown {
   position: relative;
   display: inline-block;
   width: 80%;
- 
 }
 
 .dropbtn {
@@ -514,8 +500,6 @@ footer p {
   margin-top: 3rem;
 }
 
-
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -524,10 +508,9 @@ footer p {
 }
 
 .dropdown-content a {
-  
   color: black;
   background-color: white;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -548,14 +531,14 @@ footer p {
 
 .specificationContainer {
   width: 100%;
-  height: 450px;
+  height: 32rem;
   position: relative;
-  margin: 100px auto;
+  margin: 4rem auto;
 }
 
 .btn-box {
   display: flex;
-  border-bottom: 1px solid #222;
+  border-bottom: 0.063rem solid #222;
 }
 
 .btn-box button {
@@ -563,7 +546,7 @@ footer p {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
   font-weight: 200;
   color: #222;
@@ -571,21 +554,24 @@ footer p {
 }
 
 .spec-content {
-  align-items: center;
-  margin: 1rem;
   position: absolute;
+  margin: 1rem;
+  
 }
 
 .content-left img {
   max-width: 50%;
 }
 
+.content-right img {
+  max-width: 50%;
+}
 
 .displayNone {
   display: none;
 }
 
-/* Here is the code the main page 2 */
+/* Here is the code the responsive main page 2 */
 
 @media (max-width: 950px){
   .product{
@@ -597,6 +583,10 @@ footer p {
   flex-direction: column;
   Text-align: center;
   }
+
+  h1, h2, h3, h4 {
+    font-size: 130%; 
+    }
 }
 
 
